@@ -47,12 +47,15 @@ const EditorPickCard = ({
 
 const EditorPick = () => {
   return (
-    <div>
+    <section>
       <Container>
         <div className="py-20">
           {/* Heading */}
           <div className="mb-12">
-            <HeadingBox />
+            <HeadingBox
+              heading="EDITOR’S PICK"
+              description="Problems trying to resolve the conflict between "
+            />
           </div>
 
           {/* Layout */}
@@ -86,7 +89,7 @@ const EditorPick = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import { Title } from "../../general/Typography";
 
 const Hero = () => {
   return (
-    <div className="py-2">
+    <section className="py-6">
       <Container fluid>
         {/* Background */}
         <div className="rounded-2xl bg-gradient-to-r from-[#96E9FB] to-[#ABECD6]">
@@ -44,7 +44,7 @@ const Hero = () => {
           </Container>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
