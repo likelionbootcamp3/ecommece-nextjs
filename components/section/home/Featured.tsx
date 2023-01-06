@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Container from "../../general/Container";
 import { Title } from "../../general/Typography";
-import HeadingBox from "./HeadingBox";
 
 const Featured = () => {
   return (
