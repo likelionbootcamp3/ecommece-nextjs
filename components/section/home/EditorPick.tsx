@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import Container from "../../general/Container";
+import HeadingBox from "./HeadingBox";
 
 interface EditorPickCardProps {
   imgSrc: string;
@@ -35,7 +36,7 @@ const EditorPickCard = ({
       >
         <Link
           href={path}
-          className="inline-block w-full px-6 py-3 text-base font-bold text-center uppercase bg-white lg:w-auto"
+          className="inline-block w-full px-6 py-3 text-base font-bold text-center uppercase bg-white"
         >
           {title}
         </Link>
@@ -49,6 +50,11 @@ const EditorPick = () => {
     <div>
       <Container>
         <div className="py-20">
+          {/* Heading */}
+          <div className="mb-12">
+            <HeadingBox />
+          </div>
+
           {/* Layout */}
           <div className="mx-auto grid max-w-xl auto-rows-[500px] gap-8 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
             <div className="sm:col-span-2">
