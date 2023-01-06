@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        h1: ["3.5rem", "1"],
+        h1: ["2.5rem", "1"],
         h2: ["2.75rem", "1.25"],
         h3: ["1.5rem", "1.25"],
         h4: ["1.25rem", "1.5"],
