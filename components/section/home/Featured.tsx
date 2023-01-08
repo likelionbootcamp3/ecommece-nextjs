@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "../../general/Container";
 import { Title } from "../../general/Typography";
+import SecondaryHeadingBox from "./SecondaryHeadingBox";
 
 const Featured = () => {
   return (
@@ -28,22 +29,11 @@ const Featured = () => {
 
             {/* Content */}
             <div className="max-w-md lg:justify-self-end">
-              <Title level={5} className="mb-3">
-                Featured Products
-              </Title>
-              <div>
-                <Title level={2} className="mb-3 uppercase">
-                  We love what we do
-                </Title>
-                <p className="text-sm text-[#737373]">
-                  Problems trying to resolve the conflict between the two major
-                  realms of Classical physics: Newtonian mechanics.
-                  <br />
-                  <br />
-                  Problems trying to resolve the conflict between the two major
-                  realms of Classical physics: Newtonian mechanics
-                </p>
-              </div>
+              <SecondaryHeadingBox
+                heading="We love what we do"
+                subheading="Featured Products"
+                description={`Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics. \n\n Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics`}
+              />
             </div>
           </div>
         </div>

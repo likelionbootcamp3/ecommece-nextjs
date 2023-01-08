@@ -3,17 +3,15 @@ import { Title } from "../../general/Typography";
 interface HeadingBoxProps {
   heading: string;
   subheading?: string;
-  description: string;
+  description?: string;
 }
 
 const HeadingBox = ({ heading, subheading, description }: HeadingBoxProps) => {
   return (
-    <div className="max-w-sm px-8 mx-auto text-center sm:max-w-md">
-      <Title level={4} className="mb-3">
-        {subheading}
-      </Title>
-      <div>
-        <Title level={3} className="mb-3 uppercase">
+    <div className="max-w-md px-4 mx-auto text-center">
+      <div className="flex flex-col gap-3">
+        <Title level={4}>{subheading}</Title>
+        <Title level={3} className="uppercase">
           {heading}
         </Title>
         <p className="text-sm text-[#737373]">{description}</p>
