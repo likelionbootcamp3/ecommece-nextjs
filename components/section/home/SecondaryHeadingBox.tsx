@@ -28,7 +28,9 @@ const SecondaryHeadingBox = ({
       )}
     >
       <div className="flex flex-col gap-4">
-        <Title level={5}>{heading}</Title>
+        <Title level={5} className="text-[#23A6F0]">
+          {heading}
+        </Title>
         <Title level={2}>{subheading}</Title>
         <p className="max-w-sm whitespace-pre-line text-sm text-[#737373]">
           {description}

@@ -10,7 +10,9 @@ const HeadingBox = ({ heading, subheading, description }: HeadingBoxProps) => {
   return (
     <div className="max-w-md px-4 mx-auto text-center">
       <div className="flex flex-col gap-3">
-        <Title level={4}>{subheading}</Title>
+        <Title level={4} className="text-[#737373]">
+          {subheading}
+        </Title>
         <Title level={3} className="uppercase">
           {heading}
         </Title>
