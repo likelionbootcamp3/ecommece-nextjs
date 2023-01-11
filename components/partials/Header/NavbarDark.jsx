@@ -1,32 +1,7 @@
 import Container from "../../general/Container";
-import {
-  AiOutlinePhone,
-  AiOutlineMail,
-  AiOutlineInstagram,
-  AiFillYoutube,
-  AiOutlineTwitter,
-} from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import { Title } from "../../general/Typography";
-
-const socialMediaIcons = [
-  {
-    title: "Instagram",
-    icon: <AiOutlineInstagram />,
-  },
-  {
-    title: "Facebook",
-    icon: <BsFacebook />,
-  },
-  {
-    title: "Youtube",
-    icon: <AiFillYoutube />,
-  },
-  {
-    title: "Twitter",
-    icon: <AiOutlineTwitter />,
-  },
-];
+import MediaIcons from "../../display/MediaIcons";
 
 const NavbarDark = () => {
   return (
@@ -54,11 +29,7 @@ const NavbarDark = () => {
           {/* Right */}
           <div className="flex items-center gap-2.5 p-2.5">
             <Title level={6}>Follow Us :</Title>
-            <ul className="flex items-center gap-2">
-              {socialMediaIcons.map((item) => (
-                <li key={item.title}>{item.icon}</li>
-              ))}
-            </ul>
+            <MediaIcons />
           </div>
         </div>
       </Container>

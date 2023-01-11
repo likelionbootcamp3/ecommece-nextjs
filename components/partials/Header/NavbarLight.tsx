@@ -10,6 +10,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import Badge from "../../display/Badge";
 import { useState } from "react";
 import Drawer from "../../feedback/Drawer";
+import Brand from "../../navigation/Brand";
 
 const navList = [
   {
@@ -46,11 +47,7 @@ const NavbarLight = () => {
         {/* Inner layout */}
         <div className="flex items-center justify-between pt-3 pb-2 lg:gap-10">
           {/* Navbar Brand */}
-          <div className="min-w-[187px]">
-            <Link href="/" className="text-2xl font-bold">
-              Bandage
-            </Link>
-          </div>
+          <Brand />
 
           {/* Navbar Nav */}
           <div className="flex items-center justify-between lg:flex-grow">

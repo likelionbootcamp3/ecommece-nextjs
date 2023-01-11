@@ -1,3 +1,4 @@
+import Footer from "../partials/Footer";
 import Header from "../partials/Header";
 
 interface RootLayoutProps {
@@ -9,6 +10,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <>
       <Header />
       <main className="font-body">{children}</main>
+      <Footer />
     </>
   );
 };

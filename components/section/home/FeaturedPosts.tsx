@@ -62,7 +62,7 @@ const FeaturedPostCard = () => {
 
       {/* Content */}
       <div className="flex-grow p-6">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3 sm:gap-4">
           {/* Rating */}
           <div className="flex items-center justify-between gap-4">
             <Link href="" className="text-sm font-bold text-[#23A6F0]">
@@ -97,7 +97,7 @@ const FeaturedPostCard = () => {
           {/* Colors */}
           <ColorBulletList colors={["red", "blue", "green"]} />
           {/* Features */}
-          <div className="flex items-center gap-3.5 text-[#737373]">
+          <div className="flex flex-col gap-2 text-[#737373] sm:flex-row sm:items-center sm:gap-3.5">
             <div className="flex items-center gap-2">
               <AiOutlineClockCircle color="#23A6F0" />
               <span className="text-xs">22h</span>
@@ -119,7 +119,7 @@ const FeaturedPostCard = () => {
             >
               <div className="flex items-center gap-2.5 py-2.5 px-5 text-[#23A6F0]">
                 <Title level={6}>Learn More</Title>
-                <AiOutlineRight />
+                <AiOutlineRight strokeWidth={50} />
               </div>
             </Link>
           </div>
