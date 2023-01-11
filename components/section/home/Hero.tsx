@@ -33,6 +33,7 @@ const Hero = () => {
                 {/* Image */}
                 <div className="relative">
                   <Image
+                    priority
                     src="/assets/hero.png"
                     alt=""
                     width={600}
