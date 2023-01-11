@@ -19,7 +19,7 @@ const navList = [
   },
   {
     label: "Shop",
-    path: "/shop",
+    path: "/categories",
   },
   {
     label: "About",

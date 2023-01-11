@@ -7,11 +7,11 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen font-body">
       <Header />
-      <main className="font-body">{children}</main>
+      <main className="flex-grow">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 
