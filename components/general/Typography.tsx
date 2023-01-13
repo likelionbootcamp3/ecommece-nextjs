@@ -8,7 +8,7 @@ export type TitleVariantProps = VariantProps<typeof titleVariants>;
 export const titleVariants = cva("color-black font-heading", {
   variants: {
     level: {
-      1: "font-bold text-h1 text-[#252B42]",
+      1: "font-bold text-h1",
       2: "font-bold text-h2",
       3: "font-bold text-h3",
       4: "font-normal text-h4",

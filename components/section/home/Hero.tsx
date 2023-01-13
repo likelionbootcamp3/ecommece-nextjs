@@ -33,7 +33,9 @@ const Hero = () => {
                   <Title level={5} className="text-[#2A7CC7]">
                     SUMMER 2020
                   </Title>
-                  <Title level={1}>NEW COLLECTION</Title>
+                  <Title level={1} className="text-[#252B42]">
+                    NEW COLLECTION
+                  </Title>
                   <Title level={4} className="w-[28ch]">
                     We know how large objects will act, but things on a small
                     scale.
@@ -56,7 +58,7 @@ const Hero = () => {
                     height={600}
                     className="relative z-10 object-cover h-full"
                   />
-                  <HeroBlob className="z-9 absolute right-1/2 top-0 aspect-square h-[400px] ktranslate-x-1/2 lg:right-0 lg:h-[500px] lg:translate-x-0" />
+                  <HeroBlob className="z-9 absolute right-1/2 top-0 aspect-square h-[400px] translate-x-1/2 lg:right-0 lg:h-[500px] lg:translate-x-0" />
                 </div>
               </div>
             </div>

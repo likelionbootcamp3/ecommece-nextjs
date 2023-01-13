@@ -25,6 +25,9 @@ module.exports = {
           DEFAULT: "#23A6F0",
         },
       },
+      backgroundImage: {
+        "banner-shop": "url(/assets/banner/shop.avif)",
+      },
     },
   },
   plugins: [],
