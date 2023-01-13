@@ -110,7 +110,11 @@ const NavbarLight = () => {
           <ul className="flex flex-col items-center gap-6">
             {navList.map((item) => (
               <li key={item.path}>
-                <Link href={item.path} className="text-2xl">
+                <Link
+                  href={item.path}
+                  className="text-2xl"
+                  onClick={() => setIsNavDrawerOpen(false)}
+                >
                   {item.label}
                 </Link>
               </li>

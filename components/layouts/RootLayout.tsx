@@ -12,7 +12,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <Head>
         <title>Bandage</title>
       </Head>
-      <div className="flex flex-col min-h-screen font-body">
+      <div className="flex flex-col w-full min-h-screen font-body">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
