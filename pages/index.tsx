@@ -1,3 +1,4 @@
+import Breadcrumb from "../components/navigation/Breadcrumb";
 import BestSeller from "../components/section/home/BestSeller";
 import Client from "../components/section/home/Client";
 import EditorPick from "../components/section/home/EditorPick";
@@ -9,6 +10,7 @@ import Services from "../components/section/home/Services";
 const Home = () => {
   return (
     <div>
+      <Breadcrumb />
       <Hero />
       <Client />
       <EditorPick />

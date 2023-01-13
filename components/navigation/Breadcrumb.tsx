@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useMemo } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { BiChevronRight } from "react-icons/bi";
 import Container from "../general/Container";
@@ -11,12 +11,9 @@ interface BreadcrumbProps {
   bc?: string;
 }
 
-const Breadcrumb = ({ startName = "Home", bc }: BreadcrumbProps) => {
-  const { pathname } = useRouter();
-
-  if (!(bc || pathname)) return null;
-
-  const bcRouteList = (bc || pathname)
+function getBreadcrumbList(bc: string, startName: string) {
+  if (!bc || bc === "/") return null;
+  return bc
     .slice(1)
     .split("/")
     .reduce(
@@ -26,6 +23,13 @@ const Breadcrumb = ({ startName = "Home", bc }: BreadcrumbProps) => {
       },
       [{ path: "/", name: startName }]
     );
+}
+
+const Breadcrumb = ({ startName = "Home", bc }: BreadcrumbProps) => {
+  const { pathname } = useRouter();
+  const bcRouteList = getBreadcrumbList(bc || pathname, startName);
+
+  if (!bcRouteList) return null;
 
   return (
     <nav>
